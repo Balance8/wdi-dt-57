@@ -2,7 +2,7 @@
 
 # Welcome to General Assembly - Los Angeles!
 
-## Welcome WDI-DTLA 55
+## Welcome WDI-DTLA 57
 
 This will be your shared class repo! Guides, in-class labs and code samples, and other resources will live here. **ALL** official resources for this class will live in this repository.
 
@@ -17,7 +17,7 @@ This will be your shared class repo! Guides, in-class labs and code samples, and
 ### Repo Structure
 
 ```
-/WDI-DT-55
+/wdi-dt-57
     /resources
     /projects
     /work
@@ -33,32 +33,32 @@ This will be your shared class repo! Guides, in-class labs and code samples, and
 
 ### Becoming Familiar With the WDI GitHub Workflow
 
-#### Forking (copying) the GA Student Repo to Your GitHub Account
+#### Forking (copying) the GA Class Repo to Your GitHub Account
 
-You will have read-only access to the GA Student repo.  However, you most certainly will want to be able to make changes (e.g., add notes, save code exercises, etc).  These changes will be saved to your own personal copy of GA's Student repo - known as a **fork**. To get this fork do the following:
+You will have read-only access to the GA class repo.  However, you most certainly will want to be able to make changes (e.g., add notes, save code exercises, etc).  These changes will be saved to your own personal copy of GA's Student repo - known as a **fork**. To get this fork do the following:
 
 1. Make sure that you're logged in to your GitHub account.
-2. In another tab, browse to the GA Student repo:  [https://github.com/ga-students/WDI-DT-55](https://github.com/ga-students/WDI-DT-55)
+2. In another tab, browse to the GA class repo:  [https://github.com/ga-students/WDI-DT-55](https://github.com/ga-students/wdi-dt-57)
 3. In the top-right corner of the page, click the `Fork` button.
 
 Now you will have a copy of the repo in *your* GitHub account!
 
 #### Cloning Your Copy of the Repository Locally
 
-Now that you have a copy of the Student repo in your GitHub account, it's time to bring the contents of that repo to your computer - this process is known as **cloning**:
+Now that you have a copy of the class repo in your GitHub account, it's time to bring the contents of that repo onto your computer - this process is known as **cloning**:
 
-1. Browse to your fork of the GitHub Student repo and under the repository name click `Clone or download`
+1. On your GitHub account, browse to your fork of the GitHub class repo and under the repository name click `Clone or download`
 2. In the `Clone with HTTPS` section, click the clipboard to copy the URL for the repository.
 3. Open Terminal and navigate to the `~/code` folder - you may choose a different folder if you wish, however our instructions in class will assume you clone the repo into a folder named `code`.
-4. Type the following command in Terminal once inside the `~/code` directory to clone the repository:
+4. In Terminal, type `git clone ` and paste in the URL on the clipboard. The command should now look something like this:
 
 ```
-$ git clone https://github.com/YOUR-GITHUB-USERNAME-HERE/WDI-DT-55
+$ git clone https://github.com/YOUR-GITHUB-USERNAME-HERE/wdi-dt-55
 ```
 
-Now you have a local copy of your fork of the GA Student repo!
+You can now `$ cd wdi-dt-55` and check out your local copy of your fork of the GA class repo!
 
-#### Adding a git remote for the original GA Student repo
+#### Adding a git remote for the original GA class repo
 
 Repos on your computer are called **local repos**.
 
@@ -72,43 +72,44 @@ $ git remote -v
 
 Note that by convention, the remote that points to the GitHub repo it was cloned from is called **origin**.
 
-In order to get the updates that the instructors push to the GA Student repo, you will need to create another **remote** that points to this *original* GitHub repo:
+In order to get the updates that the instructors push to the GA class repo, you will need to create another **remote** that points to GA's class repo that you forked:
 
 ```
-$ git remote add upstream https://github.com/ga-students/WDI-DT-55
+$ git remote add upstream https://github.com/ga-students/wdi-dt-57
 ```
 
 Note that by convention, the remote that points to the *original* GitHub repo that was forked is named **upstream**.
 
 #### Getting Changes Pushed by Your Instructors
 
-Each day instructional materials will be shared via Git (often multiple times per day). You will want to bring these materials into your local repo.
+Each day (maybe several times a day), instructional materials will be pushed to the class repo by your instructors. You will want to "pull" these materials into your local repo.
 
 First, if you've made any changes within the repo locally, you will need to **commit** those changes first:
 
 ```
-$ git add your_file.md
+$ git add -A
+$ git commit -m "Add amazing work"
 ```
 
-Now you can fetch the updates from the Github Student repo and merge them into your local repo:
+Now you can fetch the updates from the Github Student repo and merge them into your **local** repo (on your computer):
 
 ```
 $ git pull upstream master
 ```
 
-When you want to save commits you have locally to your forked GitHub student repo:
+When you want to save commits you have locally to your forked GitHub class repo (in the cloud):
 
 ```
 $ git push origin master
 ```
 
-Here is a picture of our Git workflow:
+Here is a picture of this Git/GitHub workflow:
 
 <img src="https://i.imgur.com/w871ATo.png">
 
 #### Handling Merge Conflicts
 
-A **merge conflict** occurs when the same line of code in your local repo is different than code in your remote repo. This confuses GitHub and therfore you must manually fix merge conflicts before pulling your remote into your local. GitHub will tell you that a merge conflict exists and will *annotate* your code to show you how your local code differs from your remote code. An example of such annotation is below.
+A **merge conflict** occurs when the same line of code in your local repo is different than code in your remote repo. This confuses GitHub and therefore you must manually fix merge conflicts before pulling your remote into your local. GitHub will tell you that a merge conflict exists and will *annotate* your code to show you how your local code differs from your remote code. An example of such annotation is below.
 
 ```
 <<<<<<< HEAD
@@ -122,7 +123,7 @@ Once you have resolved these merge conflicts you can `add` and `commit` normally
 
 #### Important
 
-"Nested" repos are not permitted.  Therefore, if there is any code/projects that you want to put in its own repo, be sure to create/move those folders out of the student repo.
+**"Nested" repos are never permitted**.  Therefore, if you have important code, such as your projects, that belongs in its own repo, **be sure to put that code in folders outside of the class repo**.
 
 ### Instructional Team
 
@@ -133,17 +134,15 @@ Once you have resolved these merge conflicts you can `add` and `commit` normally
 
 ### Course Information
 
-- Class Dates: Monday-Friday 9:00AM-5:00PM
-- Course duration: December 4th, 2017 - March 7th, 2018
+- Course duration: Monday, March 12th, 2018 - Monday, June 4th, 2018 (12 weeks, plus one extra day due to Memorial Day holiday)
+- Class days & time: Monday - Friday 9:00am-5:00pm (not including after hours)
 - Holidays:
-	- December 25th, 2017 - January 1, 2018 (Winter Break)
-	- Monday, January 15, 2018 (Martin Luther King Day)
-	- Monday, February 19, 2018 (Presidents' Day)
-- Please note the week following your last day of class is your final Outcomes sprint where your career coach will help you with your job search, etc.
+	- Monday, May 28, 2018 (Memorial Day)
+- Please note that after WDI, there will be 4 or 5 days of additional Outcomes workshops where your career coach will help you prepare for your job search, etc.
 
 ### GA Immersive Graduation Requirements
 
-General Assembly's courses are pass/fail programs. We have certain requirements in order to be considered a graduate of our programs which are outlined in our [GA Catalog](https://ga-core.s3.amazonaws.com/cms/files/files/000/004/189/original/GA_Catalog-All-Markets-2016.07.05_bvm.pdf)
+General Assembly's courses are pass/fail programs. We have certain requirements in order to be considered a graduate of the WDI program:
 
 - No more than 3 days absent from class over the duration of the course
 - Successful completion of four assigned projects 
