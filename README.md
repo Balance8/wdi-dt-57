@@ -38,7 +38,7 @@ This will be your shared class repo! Guides, in-class labs and code samples, and
 You will have read-only access to the GA class repo.  However, you most certainly will want to be able to make changes (e.g., add notes, save code exercises, etc).  These changes will be saved to your own personal copy of GA's Student repo - known as a **fork**. To get this fork do the following:
 
 1. Make sure that you're logged in to your GitHub account.
-2. In another tab, browse to the GA class repo:  [https://github.com/ga-students/WDI-DT-55](https://github.com/ga-students/wdi-dt-57)
+2. In another tab, browse to the GA class repo:  [https://github.com/ga-students/wdi-dt-57](https://github.com/ga-students/wdi-dt-57)
 3. In the top-right corner of the page, click the `Fork` button.
 
 Now you will have a copy of the repo in *your* GitHub account!
@@ -53,10 +53,10 @@ Now that you have a copy of the class repo in your GitHub account, it's time to 
 4. In Terminal, type `git clone ` and paste in the URL on the clipboard. The command should now look something like this:
 
 ```
-$ git clone https://github.com/YOUR-GITHUB-USERNAME-HERE/wdi-dt-55
+$ git clone https://github.com/YOUR-GITHUB-USERNAME-HERE/wdi-dt-57
 ```
 
-You can now `$ cd wdi-dt-55` and check out your local copy of your fork of the GA class repo!
+You can now `$ cd wdi-dt-57` and check out your local copy of your fork of the GA class repo!
 
 #### Adding a git remote for the original GA class repo
 
