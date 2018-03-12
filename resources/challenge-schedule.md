@@ -7,3 +7,11 @@
 * Wednesday: `2-range`
 * Thursday: `3-isPrime`
 * Friday: `4-add`
+
+## Week 2
+
+* Monday: `5-objToString`
+* Tuesday  `6-identity`
+* Wednesday: `7-sum`
+* Thursday: `8-last`
+* Friday: `9-fromPairs`
