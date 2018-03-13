@@ -20,8 +20,9 @@
 > _Atwood's Law:_<br>
 > "Any application that can be written in JavaScript will eventually be written in JavaScript."<br>
 > _\- Jeff Atwood, co-founder of Stack Overflow_
- 
-![](https://i.imgur.com/P4o0pdR.jpg)
+
+*Languages on GitHub - Percentage of Monthly Active Users:*
+![](https://i.imgur.com/HJapAIF.png)
 
 **? - Any thoughts as to why JavaScript has become so popular?**
 
@@ -47,18 +48,18 @@ The main purpose of JavaScript is to provide behavior to our web applications vi
 
 JavaScript is an _untyped_ language. This means that we do not explicitly specify the _type_ of data we are working with.
 
-In _strongly typed_ languages such as Java, data types are explicitly specified.
+In _strongly typed_ languages such as Java, data types are explicitly specified for a variable - and will trigger an error if a different data type is assigned.
 
 > _Strongly typed_ languages require a little more effort to code in, however, many developers agree that it's worth it because it makes code less error prone. There is a newer language called _TypeScript_ you might hear about - this language is a superset of JS and adds strong typing.
 
-Although we don't specify data types in JavaScript, every piece of data **still has a type**!  The type being defined by the actual type of data we are using in a given scenario.  For example, when we assign some text to a variable like this:
+Although we don't specify data types in JavaScript, every value (piece of data) **still has a type**! For example, when we assign some text to a variable like this:
 
 ```js
 var myName = "Joe Cool";
 ```
 the variable `myName` **would have a data type of ________?**
 
-JavaScript has six main data types (ES2015 adds a new _symbol_ data type).
+JavaScript has six main data types (ES2015 adds a new _symbol_ data type - that we don't need to worry about).
 
 ![](https://i.imgur.com/E4JR95G.png)
 
