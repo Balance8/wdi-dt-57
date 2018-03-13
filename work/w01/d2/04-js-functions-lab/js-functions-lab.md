@@ -10,13 +10,15 @@ This lab provides an opportunity to practice defining and coding some real-world
 
 ## Exercise
 
-#### Setup
+#### Setup & Instructions
 
-1. Create an `index.html`.
-2. Create a directory named `js`.
-3. Create a file named `lab-functions.js` inside of the `js` directory.
-4. Use a `<script>` element in the `<head>` of `index.html` to bring the `lab-functions.js` file into the web page.
-5. The code in `lab-functions.js` will then execute whenever the page is loaded or refreshed.
+Create a new JavaScript Repl for these exercises.
+
+Title your Repl **JS Function Lab**.
+
+Slack your instructor the link to your Repl when you are done.
+
+This lab is due by 9am the next day.
 
 #### Requirements
 
