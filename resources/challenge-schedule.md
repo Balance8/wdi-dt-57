@@ -19,7 +19,7 @@
 ## Week 3
 
 * Monday: `10-twoToTheN`  
-* Tuesday:
+* Tuesday: `11-reverse`
 * Wednesday: 
 * Thursday: 
 * Friday:
