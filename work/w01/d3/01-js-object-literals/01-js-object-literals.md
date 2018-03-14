@@ -65,7 +65,7 @@ new Object(); // Object() is a constructor function
 
 Create a new object with two properties:
   1. `name` - your name
-  2. `age` - your favorite color
+  2. `favColor` - your favorite color
 ---
 
 #### new Keyword and Constructor Functions
