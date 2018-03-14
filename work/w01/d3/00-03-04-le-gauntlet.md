@@ -1,4 +1,4 @@
-# Le Guantlet 
+# Le Gauntlet 
 
 Today your goal is to complete the following 10 coding challenges: 
 
