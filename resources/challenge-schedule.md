@@ -13,8 +13,8 @@
 * Monday: `5-balancedBraces`
 * Tuesday: `6-palindrome`
 * Wednesday: `7-truncateString`
-* Thursday:
-* Friday:
+* Thursday: `8-filterOutOdds`
+* Friday:`9-tail`
 
 ## Week 3
 
