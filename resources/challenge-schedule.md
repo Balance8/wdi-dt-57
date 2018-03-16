@@ -11,8 +11,8 @@
 ## Week 2
 
 * Monday: `5-balancedBraces`
-* Tuesday:
-* Wednesday:
+* Tuesday: `6-palindrome`
+* Wednesday: `7-truncateString`
 * Thursday:
 * Friday:
 
