@@ -10,11 +10,11 @@
 
 ## Week 2
 
-* Monday: `5-balancedBraces`
-* Tuesday:
-* Wednesday:
-* Thursday:
-* Friday:
+* Monday: `5-caesarCipher`
+* Tuesday: `6-palindrome`
+* Wednesday: `7-truncateString`
+* Thursday: `8-filterOutOdds`
+* Friday:`9-tail`
 
 ## Week 3
 
