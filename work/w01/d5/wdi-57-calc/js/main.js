@@ -45,7 +45,7 @@ function handleClick(e) {
       input += input.includes('.') ? '' : '.';
       break;
     case '±':
-      if (!input.includes('-')) input = '-' + input;
+      input = input.includes('-') ? input.substring(1) : '-' + input;
       break;
     case '←':
       input = input.substring(0, input.length - 1);
