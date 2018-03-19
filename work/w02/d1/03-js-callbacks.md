@@ -4,7 +4,7 @@
 
 | Learning Objectives - SWBAT: |
 | :--- |
-| Describe the Use Case for Callbacks |
+| Identify 3 Use Cases for Callbacks |
 | Use a Named Function as a Callback |
 | Use an Anonymous Function as a Callback |
 
