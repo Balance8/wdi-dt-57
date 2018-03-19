@@ -18,7 +18,7 @@
 
 ## Week 3
 
-* Monday:
+* Monday: `10-getProductsOfAllIntsExceptAtIndex`
 * Tuesday: `11-reverse`
 * Wednesday: 
 * Thursday: 
