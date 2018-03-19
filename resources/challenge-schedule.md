@@ -14,7 +14,7 @@
 * Tuesday: `6-palindrome`
 * Wednesday: `7-truncateString`
 * Thursday: `8-filterOutOdds`
-* Friday:`9-tail`
+* Friday: `9-tail`
 
 ## Week 3
 
