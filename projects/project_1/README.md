@@ -33,7 +33,7 @@ As a reminder, your project's code **must be substantially yours**. Do not copy 
 - Have functions and variables that are named sensibly. Remember, functions are typically named as verbs and variables (data) named as nouns.
 - Stick with **KISS (Keep It Simple Stupid)**. Don't attempt to implement a computer opponent.  This typically requires AI which is beyond the scope of WDI.
 - Write **DRY (Don't Repeat Yourself)** code. Check for repeating code and refactor into functions that accept arguments.
-- Use **Use native Javascript or jQuery** for **DOM manipulation** - your choice. However be consistent - it's not wise to mix & match techniques.
+- **Use native Javascript or jQuery** for **DOM manipulation** - your choice. However be consistent - it's not wise to mix & match techniques.
 - **Deploy your game online** using GitHub Pages so that the rest of the world can play your game!
 
 ---
