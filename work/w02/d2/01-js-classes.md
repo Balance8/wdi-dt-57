@@ -116,7 +116,6 @@ var cohort = {
 
 ---
 ### The _<span style="text-transform:lowercase">constructor</span>_ Method
-<br>
 
 - When a class is being instantiated, the special `constructor` method in the class will automatically be called:
 
@@ -134,20 +133,22 @@ var cohort = {
 - **The purpose** of the `constructor` method is to initialize the data properties of the new object being created (represented by `this`).
 
 ---
-### Default _<span style="text-transform:lowercase">constructor</span>_ Method
+### The _<span style="text-transform:lowercase">constructor</span>_ Method
 <br>
 
-- Defining a `constructor` method is optional, if it is not defined, a hidden **default** `constructor` method is automatically called.
+- If you don't have any properties to initialize, the `constructor` method is optional (a hidden default constructor is called).
 
-- In derived classes, the default `constructor` method is:
+- For example, classes can be used to simply expose static methods (discussed in a bit):
 
 	```js
-	constructor(...args) {
-	  super(...args);
+	class Math {
+		static abs(n) {
+			return n < 0 ? n * -1 : n;
+		}
 	}
-	```
 	
-- This ensures inherited properties are properly initialized.
+	Math.abs(-123); // returns 123
+	```
 
 ---
 ### Practice - Add a Property
@@ -232,7 +233,7 @@ var cohort = {
 ### Overriding Methods
 <br>
 
-- If we define a method that already exists, we "override" it. For example, we can override the Object's `toString` method by adding it to our class:
+- If we define a method that already exists in the object hierarchy, we "override" it. For example, we can override the Object's `toString` method by adding it to our class:
 
 	```js
 	  // existing methods above
@@ -283,9 +284,9 @@ Vehicle.prototype.start = function() {
 var car = new Vehicle('A1234', 'Toyota', 'Camry');
 ```
 
-- Note that the constructor function is pretty much the same as a constructor method and that methods are defined on the function's prototype object.
+- Note that constructor functions are pretty much the same as constructor methods in a class and that methods are defined on the function's prototype object.
 
-- Also, invoking a class and a constructor function is identical.
+- Invoking a class and a constructor function works identically.
 
 ---
 ### Static Methods
@@ -364,11 +365,20 @@ var car = new Vehicle('A1234', 'Toyota', 'Camry');
 	    console.log('Look Mom, no hands!');
 	  }
 	}
-	
+	```
+
+- In a derived class, the `super` keyword represents the parent class and must be called before the `this` keyword can be used in the constructor.
+
+---
+### Inheritance
+
+- Now we can create instances of `Plane` like this:
+
+	```js	
 	var spyPlane = new Plane('secret', 'Lockhead', 'SR-71', 'USA');
 	```
 
-- The `super` method represents the parent class and is being called above to initialize the base properties using the parent's `constructor` method.
+- Note how the additional arguments used to initialize derived classes are always provided after the parent class'.
 
 ---
 ### Inheritance
