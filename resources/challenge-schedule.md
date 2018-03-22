@@ -20,6 +20,6 @@
 
 * Monday: `10-getProductsOfAllIntsExceptAtIndex`
 * Tuesday: `11-reverse`
-* Wednesday: 
+* Wednesday: `12-multiplesOfThreeAndFive`
 * Thursday: 
 * Friday:
