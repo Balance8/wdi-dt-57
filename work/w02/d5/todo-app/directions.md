@@ -18,7 +18,7 @@ AAU I want to be able too...
 * Be able to submit my To-Do's and have them appear in list form 
 * Mark a To-Do as "completed"
 * See a list of *only* my completed To-Do's 
-* Change the status of a "completed" To-Do to *incomplete"
+* Change the status of a "completed" To-Do to "incomplete"
 
 ### Deliverables 
 
