@@ -2,5 +2,13 @@
 
 | Student | Game | GitHub | Hosted Site |
 |---|:---:|:---:|:---:|
-| | | | |
-
+| Andrew | Blackjack | | |
+| Conner | Minesweeper | | |
+| James | War | | |
+| Jason | Roulette | | |
+| Jesse | Connect Four | | |
+| Jonathan | Blackjack | | |
+| Lorenzo | Hangman | | |
+| Mike A | Slot Machine | | |
+| Slocum (Mike) |  | | |
+| Tara | Slot Machine | | |
