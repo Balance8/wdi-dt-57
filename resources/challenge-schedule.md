@@ -21,5 +21,5 @@
 * Monday: `10-getProductsOfAllIntsExceptAtIndex`
 * Tuesday: `11-reverse`
 * Wednesday: `12-multiplesOfThreeAndFive`
-* Thursday: 
-* Friday:
+* Thursday: `13-convertToF`
+* Friday: `14-returnX`
