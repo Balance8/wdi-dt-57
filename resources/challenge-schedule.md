@@ -23,3 +23,19 @@
 * Wednesday: `12-multiplesOfThreeAndFive`
 * Thursday: `13-convertToF`
 * Friday: `14-returnX`
+
+## Week 4 
+
+* Monday: `15-evenFibonacci`
+* Tuesday: `16-coins`
+* Wednesday: `17-nthDigit`
+* Thursday: `18-longestPalindrome`
+* Friday: `19-bubbleSort`
+
+## Week 5
+
+* Monday: `20-generateBlanks`
+* Tuesday: `21-matrixMultiplication`
+* Wednesday: `22-leftShift`
+* Thursday: 
+* Friday: 
