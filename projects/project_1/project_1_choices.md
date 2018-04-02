@@ -5,7 +5,7 @@
 | Andrew | Blackjack | [link](https://github.com/lyzengar/Blackjack) | [link](https://lyzengar.github.io/Blackjack) |
 | Conner | Minesweeper | [link](https://github.com/cwohern/minesweeper-game) | [link](https://cwohern.github.io/minesweeper-game) |
 | James | War | [link](https://github.com/jcmahan/game_of_war) | [link](https://jcmahan.github.io/game_of_war) |
-| Jason | Roulette | [link](https://logicianmagician84.github.io/Roulette) | [link](https://github.com/logicianmagician84/Roulette) |
+| Jason | Roulette | [link](https://github.com/logicianmagician84/roulettes) | [link](https://logicianmagician84.github.io/roulettes) |
 | Jesse | Connect Four | [link](https://github.com/jaguirre123/Project_1_connect4/) | [link](https://jaguirre123.github.io/Project_1_connect4/) |
 | Jonathan | Blackjack | [link](https://github.com/jonegarm2/Blackjack/)| [link](https://jonegarm2.github.io/Blackjack/) |
 | Lorenzo | Hangman | [link](https://github.com/lorenzoash/hangmangame/) | [link](https://lorenzoash.github.io/hangmangame/) |

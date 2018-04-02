@@ -11,7 +11,7 @@
 - **Please complete this codeschool [Intro to Ruby](http://tryruby.org/levels/1/challenges/0)**
   - If you want additional practice, you can do the free stuff at [Codecademy Ruby Course](https://www.codecademy.com/learn/learn-ruby) 
 - Look up [Matz](https://en.wikipedia.org/wiki/Yukihiro_Matsumoto) and fall in love
-- Do [CodeWars](www.codewars.com/r/b2Ed3Q) to practice your JavaScript and try out some Ruby challenges.  For now, I'd recommend sticking to the _8th kyu_ katas. Filter them by popularity! The most popular _8th kyu_ challenges are usually the most straightforward!
+- Do [CodeWars](https://www.codewars.com/) to practice your JavaScript and try out some Ruby challenges.  For now, I'd recommend sticking to the _8th kyu_ katas. Filter them by popularity! The most popular _8th kyu_ challenges are usually the most straightforward!
 
 # AND GET SOME REST!
 
