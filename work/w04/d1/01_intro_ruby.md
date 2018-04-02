@@ -263,19 +263,19 @@ __*After this lesson, students will be able to:*__
 
 	```ruby
 	15.class
-	=> Fixnum
+	=> Integer
 	12345678912345678912.class
-	=> Bignum
+	=> Integer
 	```
 - Since everything in Ruby is an object, we can find out what **class** was used to create that object by calling its `class` method.
-- Integers are either instances of the `Fixnum` or `Bignum` class.
+- You may see `Fixnum` or `Bignum` instead of `Integer` if your Ruby version is not up to date.
 
 --- 
 
 ### Numbers - Floating Point (aka Floats)
 <br>
 
-- There's only one class used to create floats:
+- The class used to create floats is `Float`:
 
 	```ruby
 	2.34.class
