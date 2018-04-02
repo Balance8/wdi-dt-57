@@ -5,9 +5,7 @@
 Complete the exercises below.
 
 I recommend that you write these functions in VS Code. To execute the code in this file, navigate
-to the directory that holds this file and enter the following command:
-
-                $ ruby 04_arrays_and_hashes_lab.rb
+to the directory that holds this file and execute the file.
 
 Once you have completed writing these functions YOU SHOULD TEST THEM! Invoke these
 methods on sample inputs to test that they return the correct value.
