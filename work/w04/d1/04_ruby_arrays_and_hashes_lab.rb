@@ -279,3 +279,9 @@ Write a function that when given an array of integers from 1 to n with one numbe
 which number is repeated. 
 
 =end
+
+=begin
+
+Some exercises were taken from here: https://prepwork.appacademy.io/coding-test-1/practice-problems/
+
+=end
