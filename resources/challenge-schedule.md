@@ -37,5 +37,5 @@
 * Monday: `20-generateBlanks`
 * Tuesday: `21-matrixMultiplication`
 * Wednesday: `22-leftShift`
-* Thursday: 
+* Thursday: `23-bstFindNode`
 * Friday: 
