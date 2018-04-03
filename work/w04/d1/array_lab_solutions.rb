@@ -5,7 +5,9 @@
 Complete the exercises below.
 
 I recommend that you write these functions in VS Code. To execute the code in this file, navigate
-to the directory that holds this file and execute the file.
+to the directory that holds this file and enter the following command:
+
+                $ ruby 04_arrays_and_hashes_lab.rb
 
 Once you have completed writing these functions YOU SHOULD TEST THEM! Invoke these
 methods on sample inputs to test that they return the correct value.
@@ -23,21 +25,29 @@ methods on sample inputs to test that they return the correct value.
 
 # WRITE CODE HERE
 
+def put_arr_elems arr 
+  arr.each do |elem|
+    puts elem
+  end
+end
+
 # Uncomment the line below to test out the function
-# put_arr_elems([1,2,3,4]) # This should log out 1 then 2 then 3 then 4
+put_arr_elems([1,2,3,4]) # This should log out 1 then 2 then 3 then 4
 
 
 # Exercise 2. ------------------------------------------------------------------------------------
 
 # Write a method named last that returns the last element in an array.
 
-# WRITE CODE HERE
+def last arr 
+  arr.last 
+end
 
 # Uncomment the line below to test out the function
-# last([1,2,3,4]) # returns 4
+puts "The correct value of last should be 4 and I got #{last([1,2,3,4])}." # returns 4
 
 # Uncomment test below
-if (puts_last([1,2,3,4]) != 4)
+if (last([1,2,3,4]) != 4)
     raise 'puts_last should return the last element in an array'
 end
 
@@ -52,30 +62,50 @@ example_hash = {javascript: 'language mainly used for client-side scripting',
 
 # WRITE CODE HERE
 
-# Uncomment the line below to test out the function
-# keys example_hash
+def keys hsh 
+  hsh.keys 
+end 
 
-# if keys(example_hash) != [:javascript, :ruby, :whitespace]
-#     raise 'puts_key should return a list of all keys'
-# end
+
+# Uncomment the line below to test out the function
+keys example_hash
+
+if keys(example_hash) != [:javascript, :ruby, :whitespace]
+    raise 'puts_key should return a list of all keys'
+end
 
 
 # Exercise 4. ------------------------------------------------------------------------------------
 
 # Write a method named puts_value that puts (i.e., logs out) each value in a hash.
 
-# WRITE CODE HERE
+def puts_value hsh 
+  hsh.each do |key, value|
+    puts value
+  end
+end
 
 # Uncomment the line below to test out the function.
-# puts_value example_hash
+puts_value example_hash
 
 
 # Exercise 5. ------------------------------------------------------------------------------------
 
 # Write a method named sum that computes and returns the sum of integers in an array.
 
+def sum arr 
+  total = 0
+  
+  arr.each do |num|
+    total += num
+  end
+
+  total
+end
+
+
 # Uncomment the line below to test out the function]
-# puts sum([1,2,3]) #=> 6
+puts sum([1,2,3]) #=> 6
 
 
 # Exercise 6. ------------------------------------------------------------------------------------
@@ -84,8 +114,12 @@ example_hash = {javascript: 'language mainly used for client-side scripting',
 # For example, reverse_string("abc") should return "cba". It should take a string as
 # input and return the string in reverse.
 
+def reverse_string str 
+  str.reverse
+end 
+
 # Uncomment the line below to test out the function.
-# puts reverse_string("abc") #=> "cba"
+puts reverse_string("abc") #=> "cba"
 
 
 # Exercise 7. ------------------------------------------------------------------------------------
@@ -96,8 +130,19 @@ example_hash = {javascript: 'language mainly used for client-side scripting',
 # {a: 2, b: 1, c: 1}
 # Hint: Use the count method
 
+def char_frequency str 
+  hash = {}
+
+  str.each_char do |char|
+    hash[char] = str.count(char)
+  end
+
+  return hash
+  
+end
+
 # Uncomment the line below to test out the function.
-# puts charFrequency("aabc") #=> {"a" => 2, "b" => 1, "c" => 1}
+puts char_frequency("aabc") #=> {"a" => 2, "b" => 1, "c" => 1}
 
 
 # Exercise 8. ------------------------------------------------------------------------------------
@@ -106,11 +151,14 @@ example_hash = {javascript: 'language mainly used for client-side scripting',
 # return the third greatest number in the array. You may assume that
 # the array has at least three numbers in it.
 
+def third_greatest arr 
+  arr.sort[-3]
+end
 
 # Uncomment the line below to test out the function.
-# puts third_greatest([5, 3, 7]) == 3 #=> should be true
-# puts third_greatest([5, 3, 7, 4]) == 4 #=> should be true
-# puts third_greatest([2, 3, 7, 4]) == 3 #=> should be true
+puts third_greatest([5, 3, 7]) == 3 #=> should be true
+puts third_greatest([5, 3, 7, 4]) == 4 #=> should be true
+puts third_greatest([2, 3, 7, 4]) == 3 #=> should be true
 
 
 # Exercise 9. ------------------------------------------------------------------------------------
@@ -121,6 +169,17 @@ example_hash = {javascript: 'language mainly used for client-side scripting',
 #
 
 def greatest_common_factor(number1, number2)
+  min = number1 < number2 ? number1 : number2
+  gcd = 1
+
+  (2..min).to_a.each do |num|
+    if ( (number1 % num == 0) && (number2 % num == 0) ) 
+      gcd = num
+    end 
+  end
+
+  return gcd
+
 end
 
 # These are tests to check that your code is working. After writing
@@ -158,7 +217,12 @@ puts("===============================================")
 # challenge.
 
 def is_prime?(number)
-
+  (2...number).to_a.each do |num|
+    if number % num == 0 
+      return false 
+    end 
+  end 
+  return true
 end
 
 # These are tests to check that your code is working. After writing
@@ -193,7 +257,6 @@ puts("===============================================")
 #
 
 def longest_palindrome(string)
-    
 end
 
 # These are tests to check that your code is working. After writing
@@ -223,6 +286,11 @@ puts("===============================================")
 # string in the order specified by the indices of the array of indices.
 
 def scramble_string(string, positions)
+  scrambled = ""
+  positions.each do |pos|
+    scrambled += string[pos]
+  end
+  return scrambled
 end
 
 # These are tests to check that your code is working. After writing
