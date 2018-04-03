@@ -31,7 +31,7 @@ Player X's Move (e.g., B2):
 
 ### Requirements
 - It's a best practice that classes be defined in their own file, so in a separate file named _game.rb_, create a `Game` class.
-- Import the `Game` class in the main _rrr.fb_ file using the `require` or `require_relative` method (Google if you must).
+- Load the `Game` class in the main _rrr.rb_ file using the `require` or `require_relative` method (Google if you must).
 - Add a `play` method to the `Game` class. In `rrr.rb` you will create an instance of `Game` and call the `play` method on that instance to play the game!
 
 ### Hints
@@ -39,7 +39,7 @@ Player X's Move (e.g., B2):
 - Think about how/where looping makes sense, i.e., loop until the player enters a correct move, until the game's over, etc.
 - Write several small methods, each performing a single purpose, e.g., `new_game`, `print_board`, or `get_move`.
 - Consider using a hash to model your game board. If you name your keys appropriately, accessing the cell that the user types in can be trivial thanks to the fact that we can take a string like `b2` and convert it into the symbol `:b2` using the `to_sym` method.
-- **Ranges** are a cool feature not available in JS.  Letters can make ranges also and they have methods on them such as `.include?` which is handy for checking if a range of letters contains a character.  For example `if ('a'..'c').include?(move[0]) && ...` you get the idea.
+- **Ranges** are a cool feature not available in Ruby.  Letters can make ranges also and they have methods on them such as `.include?` which is handy for checking if a range of letters contains a character.  For example `if ('a'..'c').include?(move[0]) && ...` you get the idea.
 - Don't forget to use chaining when it makes sense, e.g., `gets.chomp.downcase`
 
 ## Bonus
