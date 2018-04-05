@@ -37,5 +37,61 @@
 * Monday: `20-generateBlanks`
 * Tuesday: `21-matrixMultiplication`
 * Wednesday: `22-leftShift`
-* Thursday: `23-bstFindNode`
+* Thursday: `23-alternateArrays`
+* Friday: `24-reduce`
+
+## Week 6
+
+* Monday: `25-some`
+* Tuesday: `26-thirdGreatest`
+* Wednesday: `27-transformURLs`
+* Thursday: `28-binaryToHexidecimal`
+* Friday: `29-powerOfTwo`
+
+## Week 7
+
+* Monday: 
+* Tuesday: 
+* Wednesday: 
+* Thursday: 
+* Friday: 
+
+## Week 8
+
+* Monday: 
+* Tuesday: 
+* Wednesday: 
+* Thursday: 
+* Friday: 
+
+## Week 9
+
+* Monday: 
+* Tuesday: 
+* Wednesday: 
+* Thursday: 
+* Friday: 
+
+## Week 10
+
+* Monday: 
+* Tuesday: 
+* Wednesday: 
+* Thursday: 
+* Friday: 
+
+## Week 11
+
+* Monday: 
+* Tuesday: 
+* Wednesday: 
+* Thursday: 
+* Friday:  
+
+## Week 12
+
+* Monday: 
+* Tuesday: 
+* Wednesday: 
+* Thursday: 
 * Friday: 
