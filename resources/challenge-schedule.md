@@ -36,7 +36,7 @@
 
 * Monday: `20-generateBlanks`
 * Tuesday: `21-matrixMultiplication`
-* Wednesday: `22-leftShift`
+* Wednesday: `22-addToEachArrayElem`
 * Thursday: `23-alternateArrays`
 * Friday: `24-reduce`
 
@@ -45,7 +45,7 @@
 * Monday: `25-some`
 * Tuesday: `26-thirdGreatest`
 * Wednesday: `27-transformURLs`
-* Thursday: `28-binaryToHexidecimal`
+* Thursday: `28-multiply`
 * Friday: `29-powerOfTwo`
 
 ## Week 7
