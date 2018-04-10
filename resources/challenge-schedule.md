@@ -36,7 +36,7 @@
 
 * Monday: `20-generateBlanks`
 * Tuesday: `21-matrixMultiplication`
-* Wednesday: `22-addToEachArrayElem`
+* Wednesday: `22-leftShift`
 * Thursday: `23-alternateArrays`
 * Friday: `24-reduce`
 
