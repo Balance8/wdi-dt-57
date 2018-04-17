@@ -37,8 +37,8 @@ $ rails new ppclipy_fun -T --database=postgresql
 To use Paperclip with AWS, we will need to use 3 different Ruby gems which we can do by adding the following to our `Gemfile`<sup>0</sup>:
 
 ```ruby
-gem "aws-sdk", "~> 2"
-gem "paperclip", "~> 5.0.0"
+gem "paperclip", "~> 6.0.0"
+gem 'aws-sdk-s3'
 gem "figaro"
 ```
 <sup>0</sup>Add these to the "global" gems not the development or production gems
