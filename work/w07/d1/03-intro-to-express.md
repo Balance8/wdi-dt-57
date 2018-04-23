@@ -85,7 +85,7 @@ continued on next slide...
 	$ npm init
 	```
 
-- `subl .`
+- `code .`
 
 
 ---
@@ -98,7 +98,7 @@ continued on next slide...
 	$ npm install express --save
 	```
 	
-- The `--save` option makes an entry in the dependency section of our `package.json` file.
+- The `--save` option makes an entry in the dependency section of our `package.json` file (since npm v. 5, `--save` is optional).
 
 - Create a `server.js` to put our web app's main code in:
 
