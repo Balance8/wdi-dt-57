@@ -1,5 +1,7 @@
 # Challenge Schedule 
 
+You have a **mandatory** coding challenge to complete *EVERY* day except during project week.
+
 ## Week 1
 
 * Monday: `0-jon`
@@ -16,7 +18,7 @@
 * Thursday: `8-filterOutOdds`
 * Friday: `9-tail`
 
-## Week 3
+## Week 4
 
 * Monday: `10-getProductsOfAllIntsExceptAtIndex`
 * Tuesday: `11-reverse`
@@ -24,7 +26,7 @@
 * Thursday: `13-convertToF`
 * Friday: `14-returnX`
 
-## Week 4 
+## Week 5 
 
 * Monday: `15-evenFibonacci`
 * Tuesday: `16-coins`
@@ -32,7 +34,7 @@
 * Thursday: `18-longestPalindrome`
 * Friday: `19-bubbleSort`
 
-## Week 5
+## Week 7
 
 * Monday: `20-generateBlanks`
 * Tuesday: `21-matrixMultiplication`
@@ -40,55 +42,23 @@
 * Thursday: `23-alternateArrays`
 * Friday: `24-reduce`
 
-## Week 6
+## Week 8
 
 * Monday: `25-some`
 * Tuesday: `26-thirdGreatest`
 * Wednesday: `27-transformURLs`
-* Thursday: `28-multiply`
-* Friday: `29-powerOfTwo`
-
-## Week 7
-
-* Monday: 
-* Tuesday: 
-* Wednesday: 
-* Thursday: 
-* Friday: 
-
-## Week 8
-
-* Monday: 
-* Tuesday: 
-* Wednesday: 
-* Thursday: 
-* Friday: 
-
-## Week 9
-
-* Monday: 
-* Tuesday: 
-* Wednesday: 
-* Thursday: 
-* Friday: 
+* Thursday: `28-addToEachArrayElement`
+* Friday: `29-negate`
 
 ## Week 10
 
-* Monday: 
-* Tuesday: 
-* Wednesday: 
-* Thursday: 
-* Friday: 
+* Monday: `30-ap`
+* Tuesday: `31-mean`
+* Wednesday: `32-median`
+* Thursday: `33-min`
+* Friday: `34-max`
 
 ## Week 11
-
-* Monday: 
-* Tuesday: 
-* Wednesday: 
-* Thursday: 
-* Friday:  
-
-## Week 12
 
 * Monday: 
 * Tuesday: 
