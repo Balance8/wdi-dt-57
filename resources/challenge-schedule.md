@@ -54,9 +54,9 @@ You have a **mandatory** coding challenge to complete *EVERY* day except during 
 
 * Monday: `30-ap`
 * Tuesday: `31-mean`
-* Wednesday: `32-median`
-* Thursday: `33-min`
-* Friday: `34-max`
+* Wednesday: 
+* Thursday:
+* Friday:
 
 ## Week 11
 
