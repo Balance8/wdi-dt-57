@@ -1,6 +1,6 @@
 
 <img src="https://i.imgur.com/Y74xxoD.jpg" width="900">
----
+
 # Lab - Updating & Deleting Movies
 
 ## Intro
@@ -25,7 +25,28 @@ Now it's up to you to implement the Update and Delete functionality for the movi
 
 - Ummm, what attribute on an `<input>` element can we use to initialize its _value_? (shucks, gave it away).
 
-- `method-override` middleware module will be necessary.
+- `method-override` middleware module will be necessary.  You need to install, require, and this is how you mount it for use with query strings:
+
+	```js
+	app.use(methodOverride('_method'))
+	```
+	
+	Then you can use it in a `form`'s action like this:
+	
+	```js
+	<form method="POST" action="/resource?_method=DELETE">
+	  <button type="submit">Delete Resource</button>
+	</form>
+	```
+	
+	or this:
+	
+	```js
+	<form method="POST" action="/comments/<%= c.id %>?_method=PUT">
+	  <input name="commentText" value="<%= c.commentText %>">
+	  <button type="submit">Update Comment</button>
+	</form>
+	```
 
 ### Delete
 
