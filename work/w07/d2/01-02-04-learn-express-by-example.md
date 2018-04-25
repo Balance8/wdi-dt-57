@@ -640,8 +640,7 @@ In the corresponding HTML form we write this:
 
 ```HTML
 <form method="POST" action="/posts/<%= post.id %>?_method=DELETE">
-  <input type="hidden" name="_method" value="delete"/>
-  <button type="submit" name="postId" value="<%= post.id %>">Put resource</button>
+  <button type="submit">Put resource</button>
 </form>
 ```
 
