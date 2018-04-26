@@ -53,11 +53,11 @@ Please spend 8 minutes familiarizing yourself with the code in the `starter-code
 
 What we need to finish is: 
 
-<input id="checkBox" type="checkbox"> The views in <code>views/users/index.ejs</code>, <code>views/users/new.ejs</code> and <code>views/users/show.ejs</code></br>
+- [ ] The views in <code>views/users/index.ejs</code>, <code>views/users/new.ejs</code> and <code>views/users/show.ejs</code></br>
 
-<input id="checkBox" type="checkbox"> Our controllers in <code>controllers/postsControllers.js</code> and <code>controllers/usersControllers.js</code></br>
+- [ ] Our controllers in <code>controllers/postsControllers.js</code> and <code>controllers/usersControllers.js</code></br>
 
-<input id="checkBox" type="checkbox"> Our models in <code>models/post.js</code> and <code>models/user.js</code>
+- [ ] Our models in <code>models/post.js</code> and <code>models/user.js</code>
 
 **We are going to first build out the schemas to use embedded references. We are then going to *refactor* our schemas to use referencing.**
 
