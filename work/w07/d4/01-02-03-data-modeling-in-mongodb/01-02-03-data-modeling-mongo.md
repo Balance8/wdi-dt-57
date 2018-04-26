@@ -78,9 +78,9 @@ All of the routes for this application are described in the table below:
 |-----------|----------------------|-------------------|
 | GET       | /users/new           | users#new         |
 | POST      | /users               | users#create      |
-| GET       | /users/:id           | users#show        |
-| POST      | /users/:id/posts     | posts#create      |
-| DELETE    | /users/:id/posts/:id | posts#destroy     |
+| GET       | /users/:user_id           | users#show        |
+| POST      | /users/:user_id/posts     | posts#create      |
+| DELETE    | /users/:user_id/posts/:post_id | posts#destroy     |
 
 ### Application: Embedding 
 

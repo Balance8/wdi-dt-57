@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const postsController = require('./../controllers/postsController');
 
-router.post('/:id/posts', postsController.create);
-router.delete('/:id/posts/:id', postsController.delete);
+router.post('/:user_id/posts', postsController.create);
+router.delete('/:user_id/posts/:post_id', postsController.delete);
 
 module.exports = router;
