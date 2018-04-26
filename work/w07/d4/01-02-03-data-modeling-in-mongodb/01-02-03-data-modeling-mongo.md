@@ -239,14 +239,8 @@ Try to re-write the schemas in the `models` directory to use referencing. We wil
 * Both embedding and referencing have their strengths and weaknesses.
 * Unlike the strict structure of relational DB's, data modeling in MongoDB is more art than science due to MongoDB's unique flexibility
 * Without going into to much detail, here is a quick recap of some of the key points of when to use either referencing or embedding when considering your application's data model:
-
-1. Referencing
-  * When you have a many-to-many relationship
-
-2. Embedding
-  * When the sub object always appears with it's parent. Like a comment to a post
-  * When you have a one-to-many relationship
-
+    - Use referencing when you have a many-to-many relationship
+    - Use embedding when the sub-document always appears with its parent (e.g., a comment *ALWAYS* belongs to a single blog post) or, more generally, when you have a one-to-many relationship
 
 ## Embedded and Referencing Documents
 
