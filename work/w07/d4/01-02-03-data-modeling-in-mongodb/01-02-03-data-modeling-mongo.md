@@ -154,7 +154,7 @@ post.save(function (err) {
 Things to note above: 
 
 * We can treat `post.comments` as an array and use the Mongoose `push` method to bush an embedded document into its parent document 
-    - We must save the *parent* document in order for the embedded document to be save
+    - We must save the *parent* document in order for the embedded document to be saved
 * The `remove` method removes child documents
 * `DocumentArrays` have an special method `id` that filters your embedded documents by their `_id` property (each embedded document gets one)
 
