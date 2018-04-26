@@ -21,7 +21,7 @@ Work independently as much as possible, however, collaborate as needed.
 
 Successful completion of this lab is important to getting ready for project 3, so work on it over the weekend if need be.
 
-**This lab is mandetory!**  Please create a repo and push your commits to GitHub.
+**This lab is mandatory!**  Please create a repo and push your commits to GitHub.
 
 ## Getting Started
 
@@ -31,7 +31,7 @@ Successful completion of this lab is important to getting ready for project 3, s
 
 3. Create a `database.js` module with the appropriate code to connect mongoose to the MongoDB engine. Be sure to `require` it in `server.js`. Add a `mongoose.connection.on('open', ...)` event listener that console.logs out to the terminal the host and port of the connection.
 
-4. If you're going to perform full CRUD, you'll probably need to install, require, and mount a certain middleware that's used to change a POST to a PUT, etc.
+4. You're also going to need `body-parser` middleware to handle data submitted in forms and `method-override` middleware so that a `<form>` can inform the server that you actually want a method of PUT or DELETE instead of POST.
 
 ## The Schemas and Models
 
@@ -85,9 +85,9 @@ var courseSchema = new mongoose.Schema({
 });
 ```
 
-But what if you want to be able to use `populate` when querying both the Student and Course models?  That's when you would opt to put an array on both models. However, this does result in slightly more code necessary to maintain the relationship on both models because each time a student enrolls in a course, both the student's and course's documents need to be updated.
+But what if you want to be able to use `populate` when querying both the Student and Course models?  That's when you would opt to put an array on both models. However, maintaining an array results in more code because each time a student enrolls in a course, both the student's and course's documents need to be updated.
 
-In the Thirsty Mongoose app, we will get some practice maintaining the relationship in both the Bar and Beer models.
+In the Thirsty Mongoose app, we will get some experience maintaining the relationship in both the Bar and Beer models!
 
 ### Schemas for the Thirsty Mongoose App
 
@@ -169,13 +169,13 @@ Implement the following user stories in order as listed:
 
 Use RESTful routing whenever possible. You may want to review how we did nested resource routing in Rails. For example, to add a comment to a beer, the request would look like:  `POST /beers/:id/comments`
 
-#### Automatic Fetching of sub-docs (`beers` and/or `bars`)
+#### Automatic Fetching of Referenced Docs (`beers` and/or `bars`)
 
 Remember, both bar and beer documents only store the ObjectId of their related beers and bars, for example, in the `Bar` model, you have something like this: `beers: [{type: mongoose.Schema.Types.ObjectId, ref: 'Beer'}]`
 
-However, in the detail views, you will need to show the actual properties of the referenced documents, not the ObjectId.
+However, in the detail views, you will need to show the actual properties of the referenced documents, not the `ObjectId`.
 
-You can fetch the beers or bars using separate queries if you wish, however, the more elegant approach is to use the `populate` method to automatically make those separate queries and "embed" the sub-docs for us.
+You _could_ fetch the beers or bars using separate queries, however, the more elegant approach is to use the `populate` method to automatically make those separate queries and replace the `ObjectId`s with data from the referenced document - just as if the data had been embedded in the first place!
 
 In essence, `populate` makes working with _reference_ associations almost as easy as _embedded_ ones.
 
@@ -187,7 +187,7 @@ Here's an example of code to stop serving a beer at a bar:
 
 The request might look like:  `DELETE /bars/:barId/beers/:beerId`
 
->Note: We can't use "shallow" routing here because we have a many-to-many relationship here.  We don't want to remove a beer from the _beers_ collection, we simply want to remove the beer from the bar and the bar from the beer.
+>Note: We can't use "shallow" routing here because we have a many-to-many relationship here.  Also, we don't want to remove a beer from the _beers_ collection, we simply want to remove the beer from the bar and the bar from the beer.
 
 ```js
 Bar.findById(req.params.barId, function(err, bar) {
@@ -207,7 +207,7 @@ Bar.findById(req.params.barId, function(err, bar) {
 
 There are `pre`/`post` "hooks" (middleware) available on Mongoose models.
 
-These can really come in handy in such cases as when completely deleting a bar or beer, and then having to remove it from all of the arrays where it was referenced.
+These can really come in handy in such cases as when completely deleting a bar or beer, and then having to remove it from all of the arrays where it was referenced. In other words, we can to these event hooks to avoid orphan `ObjectId`s in the `bars` and `beers` arrays.
 
 For example:
 
@@ -224,6 +224,8 @@ barSchema.post('remove', function(barDoc) {
 	});	
 });
 ```
+
+You would also want to duplicate the above approach in the `beerSchema`.
 
 ## Bonuses
 
