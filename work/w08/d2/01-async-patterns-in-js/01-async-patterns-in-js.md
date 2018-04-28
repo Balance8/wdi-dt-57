@@ -79,7 +79,7 @@ The `makeHTTPGetRequest` function *registers* an anonymous callback function tha
 
 Callbacks can unfortunately lead to code that is hard to write, hard to read and even harder to debug!
 
-![pyramid_of_doom](./images/pyramid_of_doom.PNG)
+![pyramid_of_doom](./images/pyramid_of_doom.png)
 
 This occurs when you must write asynchronous code that must be executed in series. Promises offer a clearer syntax to write this kind of code. **Promises and callbacks play the same role in asynchronous programming. They are BOTH mechanisms you can use to execute code asynchronously**.
 
