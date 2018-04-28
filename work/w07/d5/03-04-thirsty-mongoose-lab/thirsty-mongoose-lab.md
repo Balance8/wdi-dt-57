@@ -213,6 +213,8 @@ For example:
 
 ```js
 barSchema.post('remove', function(barDoc) {
+	// obtain a reference to the Beer model
+	var Beer = this.model('Beer');
 	// find all beer docs that have this bar
 	Beer.find({bars: barDoc._id}, function(err, beers) {
 		beers.forEach(function(beerDoc) {
