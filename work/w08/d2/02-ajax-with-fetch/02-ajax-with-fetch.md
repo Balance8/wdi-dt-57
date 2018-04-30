@@ -76,7 +76,7 @@ The above code makes a `GET` request to the URL `https://jsonplaceholder.typicod
 
 **What is returned by the `fetch` API is a Promise and is therefore "thenable".** The `json()` method **MUST** be used to convert data stream into JSON.
 
-The second, optional argument we can pass to the fetch API is the `options` object. In the `options` object we can specifiy many things about our HTTP request such as: 
+The second, optional argument we can pass to the fetch API is the `options` object. In the `options` object we can specify many things about our HTTP request such as: 
 
 * headers
 * content of the body 
@@ -108,6 +108,6 @@ Please take 10 minutes to familiarize yourself with the `fetch` API using the JS
 
 Use [this API](https://github.com/jtamsut/REST-api) to build a simple web application using Express that displays posts and allows users to submit posts. This application should be a single page:
 
-![post blog](./../images/post_blog.jpg)
+![post blog](./post_blog.jpg)
 
 Use  `setInterval` to "refresh" the list of posts every minute. [This](https://www.w3schools.com/jsref/met_win_setinterval.asp) is some information on `setInterval` that might be useful.
