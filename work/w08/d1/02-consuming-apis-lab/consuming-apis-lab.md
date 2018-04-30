@@ -21,12 +21,16 @@
 	```js
 	router.get('/', githubCtrl.userDetails);
 	router.post('/', githubCtrl.userDetails);
+	
+	// new route for searching for a user
 	router.post('/search', githubCtrl.search);
 	```
 	
-	Note that we are able to use the same route handler code (`userDetails`) for both the landing page (`GET /`) and the GitHub username search (`POST /`). How to enable this flexibility in `userDetails` is shown below...
+	Note that we are able to use the same route handler code (`userDetails`) in both of these cases:
+	- When a username is submitted as a `POST /` (implemented in the lesson)
+	- Or, as part of this exercise, when one of the usernames in the above screenshot is clicked to submit a `GET /` with the username sent within a query string. How to enable this flexibility of being able to extract a username from either a form's `POST` or as a query string in `userDetails` is shown below...
 
-- Refactor by putting the code for the POST routes in _routes/index.js_ into a separate controller module.  Refactoring will allow us to reuse the code from another route. The `userDetails` handler might start like this:
+- Refactor by putting the code for the POST route in _routes/index.js_ into a separate controller module.  Refactoring will allow us to reuse the code from another route. The `userDetails` handler might start like this:
 
 	```js
 	function userDetails(req, res) {
