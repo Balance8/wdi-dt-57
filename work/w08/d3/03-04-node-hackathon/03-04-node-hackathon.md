@@ -91,13 +91,6 @@ This application tests your knowledge of:
 
 Build a web scrapper to grab the data from [this](http://books.toscrape.com/catalogue/category/books/fantasy_19/index.html) web page. Scrape the site of all fantasy books and store the data from the books in a MongoDB database.
 
-
-
-
-
----
-
-
 You should expose 2 API endpoints: 
 
 ```
@@ -107,43 +100,19 @@ api/books/fantasy/:id // GET a single fantasy book by id
 
 The JSON that is returned by your API should have the following properties: 
 
-* id
-* name
-* position
-* office
-* age
-* start_date
-* salary 
+* _id
+* title 
+* rating 
+* price (in US dollars)
 
-**Note: You will have to generate the `id` property. `id`'s should start at 0 and increment by one as you move down the table.
-
-**You do not need to persist the data you scrape in a MongoDB database. It can be stored in memory.**
-
-Using the request module make a `GET` request to the following URL: http://www.jtamsut.com/dummy-text/. 
+Using the request module make a `GET` request to the following URL: http://books.toscrape.com/catalogue/category/books/fantasy_19/index.html. 
 
 ```js
-request('http://www.jtamsut.com/dummy-text/', function (error, response, html) {
+request('http://www.jtamsut.com/dummy-text/http://books.toscrape.com/catalogue/category/books/fantasy_19/index.html', function (error, response, html) {
   if (!error && response.statusCode == 200) {
     console.log(html);
   }
 });
 ```
 
-Parse the resulting HTML and grab data from HTML table. Put this data inside of an object that looks something like this: 
-
-```js
-{
-    id: 0,
-    name: "Tiger Nixon",
-    position: "System Architect",
-    office: "Edinburgh",
-    age: 61,
-    start_date: "2011/04/25",
-    salary: "$320,800"
-}
-```
-
 Use jQuery to parse the HTML. The `:first-child` psuedoclass and its derivatives will be helpful for this task. [Here](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child) is some documentation for `:first-child`.
-
-
-
