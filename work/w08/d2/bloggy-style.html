@@ -46,7 +46,9 @@
                     method: 'DELETE'
                 })
                 .then(() => getPosts());
-            } else {
+            }
+              
+            if (e.target.className === "submit-button") {
                 fetch(`${rootAPIEndpoint}/api/posts`, {
                     method: 'POST', 
                     body: JSON.stringify({ 
