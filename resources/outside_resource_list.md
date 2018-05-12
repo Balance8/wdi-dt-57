@@ -34,7 +34,12 @@ Here are a list of categorized resources for students taking WDI.
 
 * A nice little guide in typography can be found [here](http://pierrickcalvez.com/journal/a-five-minutes-guide-to-better-typography).
 
+## Web Application Security
+
+* [This](https://martinfowler.com/articles/web-security-basics.html) is a nice overview of web application security.
+
 ## Misc. and General
 
 * A nice history of JavaScript can be found [here](https://auth0.com/blog/a-brief-history-of-javascript/?utm_source=javascriptweekly&utm_medium=email).
 * [This](https://developer.mozilla.org/en-US/) is a great resource for all things web dev.
+* [This](https://github.com/kamranahmedse/developer-roadmap) is a nice overview of modern day web development tooling.

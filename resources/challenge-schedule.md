@@ -55,8 +55,8 @@ You have a **mandatory** coding challenge to complete *EVERY* day except during 
 * Monday: `30-ap`
 * Tuesday: `31-mean`
 * Wednesday: `32-nthFibonacci`
-* Thursday:
-* Friday:
+* Thursday: `33-always`
+* Friday: `34-minBy`
 
 ## Week 11
 
