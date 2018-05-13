@@ -4,7 +4,7 @@ Today is going to work a little differently than usual. We are going to learn Re
 
 ## Your Goal
 
-# **Your goal for today should be memorizing steps required to build a simple To Do app in React, so by this time tomorrow you can build a simple To Do app without the help of any external resources.**
+# **Your goal for today should be memorizing the steps required to build a simple To Do app in React, so by this time tomorrow you can build a simple To Do app without the help of any external resources.**
 
 ## Steps 
 
