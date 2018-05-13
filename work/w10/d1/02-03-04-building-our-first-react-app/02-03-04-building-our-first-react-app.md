@@ -6,13 +6,13 @@ Today is going to work a little differently than usual. We are going to learn Re
 
 # **Your goal for today should be memorizing the steps required to build a simple To Do app in React, so by this time tomorrow you can build a simple To Do app without the help of any external resources.**
 
-## Steps 
+## Iterations 
 
-### Step 1: I Build (Laptops Closed)
+### Iteration 1: I Build (Laptops Closed)
 
 I will build the application in front of you. You should ask questions and take extensive detailed notes on each step. 
 
-### Step 2: We Build
+### Iteration 2: We Build
 
 We will then build the application as a class. One of you will be randomly selected to lead us through each one of the steps below.
 
@@ -35,11 +35,11 @@ We will then build the application as a class. One of you will be randomly selec
 
 During this time I ("Teacher Jon") will be merely a spectator who will answer questions when asked them. You can treat me like Google.
 
-### Step 3: You Build
+### Iteration 3: You Build
 
 Build the To Do app a third time on your own this time.
 
-### Step 4: After Hours Extensions 
+### Iteration 4: After Hours Extensions 
 
 Add the ability to delete a Todo. Also make sure you can answer the Essential Questions below.
 
