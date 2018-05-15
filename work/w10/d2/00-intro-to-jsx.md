@@ -215,7 +215,7 @@ There are a few other syntax rules:
 	
 	<details>
 	<summary>These are also called React _________</summary>
-	>Elements
+	Elements
 	</details>
 	
 - Our app's user-defined components are **always uppercased** - like the `<Greeter />` component.
@@ -259,7 +259,7 @@ Previous to this enhancement, you would have had to wrap the sibling components 
 	
 #### Curiosity
 
-We now know that JSX is transpiled into a method call to `React.createElement`, however, we haven't seen what that method call returns.
+We now know that JSX is transpiled into a method call of `React.createElement`, however, we haven't seen what that method call returns.
 
 Let's add this after the imports in **index.js**
 
@@ -296,7 +296,7 @@ When we logged out the component object returned by `React.createElement`, there
 <summary>
 Because a component is an object, and the object has a props property, how do we access props from methods within the object?
 </summary>
->By using the this keyword - this.props
+By using the this keyword - this.props
 </details>
 
 ## JavaScript Expressions in JSX
@@ -339,7 +339,7 @@ Statements on the other hand, perform actions. A program consists primarily of s
 
 We were able to use the `ternary` operator between the `{}` in the JSX above because it's an expression (it returns a value), whereas we would not be able to use an `if` statement.
 
->Caveat: JavaScript allows us to write an expression when it expects a statement, however, the opposite is not true - you cannot provide a statement when JS expects an expression, for example, you cannot supply `console.log('something')` as an argument when calling a function.
+>Caveat: JavaScript allows us to write an expression when it expects a statement, however, the opposite is not true - you cannot provide a statement when JS expects an expression.
 
 #### JSX is an Expression Too
 
