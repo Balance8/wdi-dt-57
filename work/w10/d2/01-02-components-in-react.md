@@ -57,7 +57,7 @@ As we've seen, React has several built-in components, such as `<input />`, that 
 
 <details>
 <summary>Syntatically, what distinguishes a built-in component from our user-defined components?</summary>
-> React components are lower-cased, for example "<div>".
+React components are lower-cased, for example "\<div\>".
 </details>
 
 #### User-defined Components
@@ -66,7 +66,7 @@ Our user-defined "custom" components must be capitalized.
 
 <details>
 <summary>Think for a moment: As we compose our app's UI with our custom components,  ultimately, no UI, no elements, will be rendered in the browser window unless our components include what?</summary>
-> React Elements like "<div>" - HTML is what the browser knows and loves.
+React Elements like "\<div\>" - HTML is what the browser knows and loves.
 </details>
 
 ## Categorizing Components as _Presentational_ or _Container_ Components
@@ -77,7 +77,7 @@ Most applications display information/data.
 
 <details>
 <summary>What single word have we been using to describe this information/data?</summary>
-> State
+State
 </details>
 
 State also refers to data properties used in the app to represent the "status" of a process or UI state. For example `state.isLoading`, `state.showDetails`.
@@ -114,7 +114,7 @@ To build better UIs with components, experts like Dan Abramov within the React c
 
 <details>
 <summary>In a React app, do you believe there will be more presentational or container components?</summary>
-> A React app will have more presentational components than container components.
+A React app will have more presentational components than container components.
 </details>
 
 ## Start a New React App - `react-mastermind`
