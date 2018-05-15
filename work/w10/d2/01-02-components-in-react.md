@@ -57,7 +57,7 @@ As we've seen, React has several built-in components, such as `<input />`, that 
 
 <details>
 <summary>Syntatically, what distinguishes a built-in component from our user-defined components?</summary>
-React components are lower-cased, for example "\<div\>".
+React components are lower-cased, for example "&lt;div&gt;".
 </details>
 
 #### User-defined Components
@@ -66,7 +66,7 @@ Our user-defined "custom" components must be capitalized.
 
 <details>
 <summary>Think for a moment: As we compose our app's UI with our custom components,  ultimately, no UI, no elements, will be rendered in the browser window unless our components include what?</summary>
-React Elements like "\<div\>" - HTML is what the browser knows and loves.
+React Elements like "&lt;div&gt;" - HTML is what the browser knows and loves.
 </details>
 
 ## Categorizing Components as _Presentational_ or _Container_ Components
