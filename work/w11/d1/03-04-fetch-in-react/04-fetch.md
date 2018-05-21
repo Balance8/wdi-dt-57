@@ -446,7 +446,7 @@ We can use the fetch API inside the `componentDidMount` life cycle method where 
 
 ## Lab 
 
-Use the following JSON Placeholder API Endpoint: `https://jsonplaceholder.typicode.com/posts?userId=1` to get all posts for a given user. 
+Use the following JSON Placeholder API Endpoint: `https://jsonplaceholder.typicode.com/users` to get all data for all users. 
 
 Your final product should look something like this: 
 
