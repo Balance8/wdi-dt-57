@@ -60,8 +60,8 @@ You have a **mandatory** coding challenge to complete *EVERY* day except during 
 
 ## Week 11
 
-* Monday: 
-* Tuesday: 
-* Wednesday: 
-* Thursday: 
-* Friday: 
+* Monday: `35-firstTwoLetters`
+* Tuesday: `36-timeConvert`
+* Wednesday: `37-mapReduce`
+* Thursday: `38-maxProductOfThree`
+* Friday: `39-grayCode`
