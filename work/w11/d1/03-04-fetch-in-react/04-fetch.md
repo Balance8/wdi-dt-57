@@ -447,3 +447,7 @@ We can use the fetch API inside the `componentDidMount` life cycle method where 
 ## Lab 
 
 Use the following JSON Placeholder API Endpoint: `https://jsonplaceholder.typicode.com/posts?userId=1` to get all posts for a given user. 
+
+Your final product should look something like this: 
+
+![users](./fetch-lab.jpg)
