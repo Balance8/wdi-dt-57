@@ -6,7 +6,7 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
 ## PROJECT SETUP
 
 1. Please use the starter code with can be found in the `reddit-clone-app` directory. Take a few minutes to familiarize yourself with the code.
-2. Configure your application starter code (`reddit-clone-app`) which can be found [here]("https://github.com/ga-students/wdi-dt-57/tree/master/work/w11/d3/01-02-03-04-reddit-clone-mern/reddit-clone-app") . Use [this](https://github.com/ga-students/wdi-dt-57/blob/master/work/w11/d2/full-stack-react/full-stack-react.md) guide to set up your back-end.
+2. Configure your application starter code (`reddit-clone-app`) which can be found [here](https://github.com/ga-students/wdi-dt-57/tree/master/work/w11/d3/01-02-03-04-reddit-clone-mern/reddit-clone-app) . Use [this](https://github.com/ga-students/wdi-dt-57/blob/master/work/w11/d2/full-stack-react/full-stack-react.md) guide to set up your back-end.
 3. Make sure MongoDB is running (`mongod`), then start your Node and React servers
     - Back-end and front-end servers should be running on separate ports, in separate Terminal tabs
 4. Ensure both servers are up and running with no errors.
