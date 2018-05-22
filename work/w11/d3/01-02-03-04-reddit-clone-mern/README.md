@@ -5,11 +5,11 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
 
 ## PROJECT SETUP
 
-1. Please use the starter code with can be found in the `reddit-clone-app` directory. Take a few minutes to familiarize yourself with the code.
-2. Configure your application starter code (`reddit-clone-app`) which can be found [here](https://github.com/ga-students/wdi-dt-57/tree/master/work/w11/d3/01-02-03-04-reddit-clone-mern/reddit-clone-app) . Use [this](https://github.com/ga-students/wdi-dt-57/blob/master/work/w11/d2/full-stack-react/full-stack-react.md) guide to set up your back-end.
+1. Please use the starter code with can be found in the `reddit-clone-app` directory. Take a few minutes to familiarize yourself with the code
+2. Configure your application starter code (`reddit-clone-app`) which can be found [here](https://github.com/ga-students/wdi-dt-57/tree/master/work/w11/d3/01-02-03-04-reddit-clone-mern/reddit-clone-app). Use [this](https://github.com/ga-students/wdi-dt-57/blob/master/work/w11/d2/full-stack-react/full-stack-react.md) guide to set up your back-end
 3. Make sure MongoDB is running (`mongod`), then start your Node and React servers
     - Back-end and front-end servers should be running on separate ports, in separate Terminal tabs
-4. Ensure both servers are up and running with no errors.
+4. Ensure both servers are up and running with no errors
 5. Take a look around:
     - BACK-END: What routes, models, and controllers have been set up? What kind of database is it connecting to?
     - FRONT-END: What components have been set up?
@@ -18,16 +18,16 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
 
 ### Creating TextPost resource
 
-1. Create a `Post` model that contains `title`, `content`, `thumbnail_image_url`, `votes`, `comments` (`comments` should be an array of embedded `Comment` models) in `models/Post.js`
-2. Take a look at the API CRUD routes for the posts. Please import the `postsController`.   
-3. Fill out the `posts.js` controller (`controllers/posts.js`) using Mongoose queries
+1. Create a `Post` model that contains `title`, `content`, `thumbnail_image_url`, `votes`, `comments` (`comments` should be an array of embedded `Comment` schemas) in `models/Post.js` which can be found [here](https://github.com/ga-students/wdi-dt-57/blob/master/work/w11/d3/01-02-03-04-reddit-clone-mern/reddit-clone-app/models/Post.js)
+2. Take a look at the API CRUD [routes](https://github.com/ga-students/wdi-dt-57/blob/master/work/w11/d3/01-02-03-04-reddit-clone-mern/reddit-clone-app/routes/api/posts.js) for the posts. Please import the `postsController` in this file.   
+3. Fill out the `posts.js` controller which can be found [here](https://github.com/ga-students/wdi-dt-57/blob/master/work/w11/d3/01-02-03-04-reddit-clone-mern/reddit-clone-app/controllers/posts.js) 
 4. Add to your `seed.js` file (found in `db/seeds.js`) to create a `Post` – verify that it shows up at the appropriate endpoint
 5. Use POSTMAN to confirm that the other CRUD routes are working as well (PUT, DELETE)
 
 ### Creating Comment resource
 
-1. Create a `Comment` schema that contains `content`, `votes`
-2. Take a look at the API CRUD routes for `Comments`
+1. Create a `Comment` schema that contains `content`, `votes` [here](https://github.com/ga-students/wdi-dt-57/blob/master/work/w11/d3/01-02-03-04-reddit-clone-mern/reddit-clone-app/models/Comment.js)
+2. Take a look at the API CRUD routes for `Comments` [here](https://github.com/ga-students/wdi-dt-57/blob/master/work/w11/d3/01-02-03-04-reddit-clone-mern/reddit-clone-app/routes/api/comments.js)
 3. Fill out the `Comments` controller using Mongoose queries
 4. Add to your `seed.js` file to create a `Comment`, attached to a `Post` you've created – verify that it shows up at the appropriate endpoint
 5. Use POSTMAN to confirm that the other CRUD routes are working as well (PUT, DELETE)
