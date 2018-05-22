@@ -3,46 +3,40 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
 
 ![reddit-homepage](./reddit-homepage.png?raw=true "Reddit Homepage")
 
-
-
 ## PROJECT SETUP
-1. `git clone` this repo
-2. Create your application using `create-react-app`. Use [this](https://github.com/ga-students/wdi-dt-57/blob/master/work/w11/d2/full-stack-react/full-stack-react.md) guide to set up your back-end.
+
+1. Please use the starter code with can be found in the `reddit-clone-app` directory. Take a few minutes to familiarize yourself with the code.
+2. Configure your application starter code (`reddit-clone-app`) which can be found [here]("/reddit-clone-app") . Use [this](https://github.com/ga-students/wdi-dt-57/blob/master/work/w11/d2/full-stack-react/full-stack-react.md) guide to set up your back-end.
 3. Make sure MongoDB is running (`mongod`), then start your Node and React servers
     - Back-end and front-end servers should be running on separate ports, in separate Terminal tabs
-4. Ensure both servers are up and running by visiting their existing endpoints in your browser
+4. Ensure both servers are up and running with no errors.
 5. Take a look around:
     - BACK-END: What routes, models, and controllers have been set up? What kind of database is it connecting to?
     - FRONT-END: What components have been set up?
-6. Install `nodemon` and change your `npm start` for the back-end to run `nodemon server.js`
         
-
-
 ## CREATING THE BACK-END
 
 ### Creating TextPost resource
-1. Create a `TextPost` model that contains `title`, `content`, `thumbnail_image_url`, `votes`, `comments` (`comments` should be an array of embedded `Comment` models)
-2. Add the following API CRUD routes for `Posts`
-    - `/api/posts` – GET, POST
-    - `/api/posts/:post_id` – GET, PUT, DELETE
-3. Fill out the `Posts` controller using Mongoose queries – good review / reference 
-4. Add to your `seed.js` file to create a `Post` – verify that it shows up at the appropriate endpoint
+
+1. Create a `Post` model that contains `title`, `content`, `thumbnail_image_url`, `votes`, `comments` (`comments` should be an array of embedded `Comment` models) in `models/Post.js`
+2. Take a look at the API CRUD routes for the posts. Please import the `postsController`.   
+3. Fill out the `posts.js` controller (`controllers/posts.js`) using Mongoose queries
+4. Add to your `seed.js` file (found in `db/seeds.js`) to create a `Post` – verify that it shows up at the appropriate endpoint
 5. Use POSTMAN to confirm that the other CRUD routes are working as well (PUT, DELETE)
 
 ### Creating Comment resource
-1. Create a `Comment` model that contains `content`, `votes`
-2. Add the following API CRUD routes for `Comments`
-    - `/api/posts/:post_id/comments` – POST
-    - `/api/posts/:post_id/comments/:comment_id` – GET, PUT, DELETE
+
+1. Create a `Comment` schema that contains `content`, `votes`
+2. Take a look at the API CRUD routes for `Comments`
 3. Fill out the `Comments` controller using Mongoose queries
 4. Add to your `seed.js` file to create a `Comment`, attached to a `Post` you've created – verify that it shows up at the appropriate endpoint
 5. Use POSTMAN to confirm that the other CRUD routes are working as well (PUT, DELETE)
 
 ### Verifying Data Creation
+
 1. Use POSTMAN to create two `Post`s 
 2. Use POSTMAN to create two `Comment`s, both attached to the first `Post` you created
 3. Populate the `seed.js` file to automate data seeding
-
 
 ## CREATING THE FRONT-END
 
@@ -56,11 +50,10 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
     = `<SinglePostPage/>` will probably have all the details for a post in its state
 4. Think about what components each page will contain
     - What API requests will each page make
-5. Think about the HTTP request library you'd like to use to fetch data from your Node API endpointments (e.g. `fetch`).
+5. Use the fetch API to "fetch" data from your Node API endpoints (e.g. `fetch`).
 
 
-`fetch` documentation [here](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); great reference material [here](https://medium.com/@yoniweisbrod/interacting-with-apis-using-react-native-fetch-9733f28566bb).
-
+`fetch` documentation can be found [here](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).
 Fetch GET request:
 
 ```javascript
@@ -97,15 +90,19 @@ fetch('http://localhost:8080/api/posts', {
 ```
     
 ### Implementing User Stories
-1. User should see all posts on the home page (BONUS: rank them in descending order by `votes`)
+
+Here are some user stories that you should have done by the end of the day.
+
+1. User should see all posts on the home page (**BONUS**: rank them in descending order by `votes`)
 2. User should be able to click on a "Create Post" button and see a modal or navigate to a new page to create a new `Post`
 3. User should be able to vote on a post
 4. User should be able to create a `Comment` on a `Post`
 5. User should be able to vote on a `Comment`
-6. User should be able to comment on a comment (requires changing the `Comment` model's schema)
+6. **Bonus**: User should be able to comment on a comment (requires changing the `Comment` model's schema)
 
 
-## BONUS
+## More Bonus
+
 1. Create a `LinkPost` resource
     - Another kind of post a Reddit user can upload (simply links to an external link, e.g. news article or imgur page)
     - Model should contain fields `title`, `link_url`, `thumbnail_image_url`, `votes`,
