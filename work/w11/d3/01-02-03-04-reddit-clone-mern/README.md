@@ -1,7 +1,7 @@
 # Reddit Clone – MERN stack
 Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo – Express – React – Node) stack.
 
-![reddit-homepage](./reddit-homepage.png)
+![reddit-homepage](reddit-homepage.png)
 
 ## PROJECT SETUP
 
