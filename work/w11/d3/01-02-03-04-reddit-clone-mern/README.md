@@ -16,7 +16,7 @@ Building a [Reddit](https://www.reddit.com/) clone using the popular MERN (Mongo
         
 ## CREATING THE BACK-END
 
-### Creating TextPost resource
+### Creating Post resource
 
 1. Create a `Post` model that contains `title`, `content`, `thumbnail_image_url`, `votes`, `comments` (`comments` should be an array of embedded `Comment` schemas) in `models/Post.js` which can be found [here](https://github.com/ga-students/wdi-dt-57/blob/master/work/w11/d3/01-02-03-04-reddit-clone-mern/reddit-clone-app/models/Post.js)
 2. Take a look at the API CRUD [routes](https://github.com/ga-students/wdi-dt-57/blob/master/work/w11/d3/01-02-03-04-reddit-clone-mern/reddit-clone-app/routes/api/posts.js) for the posts. Please import the `postsController` in this file.   
