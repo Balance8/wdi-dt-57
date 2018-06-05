@@ -265,7 +265,7 @@ Please follow these steps to deploy your app to GitHub Pages:
 
 1. To save time, there's no need to make a commit, the tool we are going to use will automatically make a commit and create a `gh-pages` branch.
 
-1. In VS Code, open your **package.json** and add an additional top-level key/value pair:<br>`"homepage": "https://<your github username>.github.io/project-4-assessment",`.
+1. In VS Code, open your **package.json** and add an additional **top-level** (i.e., same level as the _dependencies_ key) key/value pair:<br>`"homepage": "https://<your github username>.github.io/project-4-assessment",`.
 
 1. Also in **package.json**, add two additional key/value pairs, `"predeploy"` and `"deploy"`, inside of the `"scripts"` key:
 
